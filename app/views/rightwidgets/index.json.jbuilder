@@ -1,0 +1,1 @@
+json.array! @rightwidgets, partial: 'rightwidgets/rightwidget', as: :rightwidget

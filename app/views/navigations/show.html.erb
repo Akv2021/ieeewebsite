@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @navigation.name %>
+</p>
+
+<p>
+  <strong>Pos:</strong>
+  <%= @navigation.pos %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @navigation.url %>
+</p>
+
+<%= link_to 'Edit', edit_navigation_path(@navigation) %> |
+<%= link_to 'Back', navigations_path %>

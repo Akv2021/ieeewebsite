@@ -1,0 +1,1 @@
+json.partial! "rightwidgets/rightwidget", rightwidget: @rightwidget

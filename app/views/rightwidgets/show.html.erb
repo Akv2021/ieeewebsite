@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @rightwidget.content %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @rightwidget.url %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @rightwidget.title %>
+</p>
+
+<%= link_to 'Edit', edit_rightwidget_path(@rightwidget) %> |
+<%= link_to 'Back', rightwidgets_path %>

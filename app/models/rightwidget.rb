@@ -1,0 +1,2 @@
+class Rightwidget < ApplicationRecord
+end

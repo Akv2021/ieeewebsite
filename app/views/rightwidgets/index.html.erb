@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rightwidgets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Url</th>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rightwidgets.each do |rightwidget| %>
+      <tr>
+        <td><%= rightwidget.content %></td>
+        <td><%= rightwidget.url %></td>
+        <td><%= rightwidget.title %></td>
+        <td><%= link_to 'Show', rightwidget %></td>
+        <td><%= link_to 'Edit', edit_rightwidget_path(rightwidget) %></td>
+        <td><%= link_to 'Destroy', rightwidget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rightwidget', new_rightwidget_path %>
